@@ -54,6 +54,15 @@ while True:
         break
 print('Access granted.')
 
+i = 0
+s = 0
+while i < 10:
+    i = i + 1
+    s = s + i
+    if s > 15:
+        continue
+    i = i + 1
+
 
 a = 'birds'
 for index, value in enumerate(a, 1):
@@ -71,3 +80,34 @@ else:
     print("Result is", result)
 finally:
     print("End of the calculation.")
+
+
+while True:
+    a = int(input())
+    if a <= 9:
+        continue
+    elif a > 100:
+        break
+
+print(a)
+
+a, b = [int(input()) for i in range(2)]
+s, c = 0, 0
+
+for i in range(a, b + 1):
+    if i % 3 == 0:
+        print(i)
+        s = s + i
+        c = c + 1
+    i += 1
+print(s / c)
+
+
+a, b = [int(input()) for i in range(2)]
+d = 1
+while True:
+    if d % a == 0 and d % b == 0:
+        break
+    else:
+       d += 1
+print(d)
