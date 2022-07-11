@@ -1,0 +1,5 @@
+# print("Test.\nNew string")
+# print("Test.\tNew string")
+print("Mertg", end="\n")
+print("fdhjhfdjhfjd", end="\r")
+print(11111)
